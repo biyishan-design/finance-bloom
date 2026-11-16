@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>證照筆記｜FINANCE BLOOM</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.detail-card {
+  margin-top: 30px;
+  padding: 25px;
+  background: #F8F3E9;
+  border-radius: 14px;
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<main>
+  <a class="back-link" href="certificates.html">← 返回證照筆記</a>
+
+  <h1 id="topic-title">金融證照</h1>
+
+  <p>FINANCE BLOOM｜金融知識研究所</p>
+
+  <div class="detail-card">
+    <h2>考試介紹</h2>
+    <p id="topic-description">
+      這項證照的考試介紹與學習內容正在整理中。
+    </p>
+
+    <h2>學習重點</h2>
+    <p>後續將整理考試範圍、重要觀念、常考題型與複習筆記。</p>
+
+    <h2>相關筆記</h2>
+    <p>知識文章持續更新中……</p>
+  </div>
+</main>
+
+<script>
+const params = new URLSearchParams(location.search);
+const topic = params.get("topic") || "金融證照";
+
+document.getElementById("topic-title").textContent = topic;
+document.getElementById("topic-description").textContent =
+  `這裡是「${topic}」的介紹頁面，後續將整理考試資訊與學習重點。`;
+
+document.title = topic + "｜FINANCE BLOOM";
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINANCE BLOOM｜金融知識研究所</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            background: #F8F3E9;
+            color: #344B48;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #344B48;
+            color: #F8F3E9;
+            padding: 22px 8%;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #A8BFA3;
+            font-size: 13px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #F8F3E9;
+            text-decoration: none;
+            margin-right: 24px;
+            font-size: 14px;
+        }
+
+        .hero {
+            padding: 85px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #77847A;
+            margin-bottom: 25px;
+        }
+
+        .hero a {
+            display: inline-block;
+            background: #A8BFA3;
+            color: #344B48;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 45px 8%;
+        }
+
+        .section h2 {
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #FFFDF8;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #E8E4D9;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #77847A;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #344B48;
+            color: #F8F3E9;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin-right: 12px;
+            }
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<header>
+    <div class="logo">🌱 FINANCE BLOOM</div>
+    <div class="subtitle">金融知識研究所</div>
+
+    <nav>
+        <a href="#home">首頁</a>
+        <a href="#knowledge">金融百科</a>
+        <a href="#about">關於我們</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>讓金融知識，慢慢發芽。</h1>
+    <p>從零開始，認識金融市場、投資工具與金融知識。</p>
+    <a href="#knowledge">開始探索 →</a>
+</section>
+
+<section class="section" id="knowledge">
+    <h2>🌷 探索金融知識</h2>
+
+    <a href="etf.html" style="text-decoration:none; color:inherit;">
+    
+       <div class="card">
+        <h3>📈 ETF 知識</h3>
+        <p>認識 ETF、主動式 ETF、多資產 ETF 與投資風險。</p>
+        <p>點擊進入 →</p>
+    </div>
+</a>
+
+        
+<a href="fund.html" class="card-link">
+  <div class="card">
+    <h3>📊 基金與債券</h3>
+    <p>認識不同金融商品的特色與基本原理。</p>
+    <p>點擊進入 →</p>
+  </div>
+</a>
+
+<a href="certificates.html" class="card-link">
+  <div class="card">
+    <h3>🎓 證照筆記</h3>
+    <p>整理金融證照考試知識，建立系統化學習內容。</p>
+    <p>點擊進入 →</p>
+  </div>
+</a>
+
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>關於 FINANCE BLOOM</h2>
+    <p>
+        FINANCE BLOOM 是一個以臺灣金融知識教育為核心的學習網站，
+        希望讓金融初學者也能透過清楚、簡單的內容理解金融世界。
+    </p>
+</section>
+
+<footer>
+    FINANCE BLOOM｜金融知識研究所
+    <br>
+    Learn Finance, Grow Together.
+</footer>
+
+</body>
+</html>
