@@ -1,0 +1,159 @@
+
+/* FINANCE BLOOM - Global Styles */
+
+:root {
+    --sage: #A8BFA3;
+    --cream: #F8F3E9;
+    --peach: #E9B8A8;
+    --forest: #344B48;
+    --white: #FFFDF8;
+    --muted: #77847A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+    background: var(--cream);
+    color: var(--forest);
+    line-height: 1.8;
+}
+
+a {
+    color: var(--forest);
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid #E8E4D9;
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.card:hover {
+    border-color: var(--sage);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+header {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 22px 8%;
+}
+
+footer {
+    background: var(--forest);
+    color: var(--cream);
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link .card {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card-link .card:hover {
+  transform: translateY(-3px);
+}
+
+/* 基金與債券、證照筆記專區 */
+
+body {
+  margin: 0;
+  padding: 35px 20px;
+  font-family: "Microsoft JhengHei", sans-serif;
+  background: #F8F3E9;
+  color: #344B48;
+  line-height: 1.9;
+}
+
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+  background: #FFFDF8;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+main > a {
+  color: #344B48;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+main h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  margin-top: 35px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #A8BFA3;
+}
+
+main section {
+  margin-top: 25px;
+  padding: 20px;
+  background: #F8F3E9;
+  border: 1px solid #E8E1D5;
+  border-radius: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  main {
+    padding: 22px;
+  }
+}
+
+section li {
+  margin: 12px 0;
+}
+
+section li a {
+  color: #344B48;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+section li a:hover {
+  color: #A8BFA3;
+  text-decoration: underline;
+}

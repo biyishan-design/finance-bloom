@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>基金與債券｜FINANCE BLOOM</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.detail-card {
+  margin-top: 30px;
+  padding: 25px;
+  background: #F8F3E9;
+  border-radius: 14px;
+}
+</style>
+</head>
+<body>
+<main>
+  <a href="fund.html">← 返回基金與債券</a>
+
+  <h1 id="topic-title">基金與債券</h1>
+  <p>FINANCE BLOOM｜金融知識研究所</p>
+
+  <div class="detail-card">
+    <h2>文章摘要</h2>
+    <p id="topic-description">知識內容整理中……</p>
+
+    <h2>重要觀念</h2>
+    <p>相關概念、定義與重點將陸續整理。</p>
+
+    <h2>實務應用</h2>
+    <p>相關案例與應用內容持續更新中。</p>
+
+    <h2>延伸閱讀</h2>
+    <p>更多相關金融知識將陸續新增。</p>
+  </div>
+</main>
+
+<script>
+const params = new URLSearchParams(location.search);
+const topic = params.get("topic") || "基金與債券";
+
+document.getElementById("topic-title").textContent = topic;
+document.getElementById("topic-description").textContent =
+  `這裡是「${topic}」的知識整理頁面，相關內容持續更新中。`;
+
+document.title = topic + "｜FINANCE BLOOM";
+</script>
+</body>
+</html>
